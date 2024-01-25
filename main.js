@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //Lấy ra phần tử có id là "answer" và gán nó vào biến answer. Phần tử này là ô nhập liệu hiển thị kết quả trên máy tính.
 
   function appendToAnswer(value) {
-    var infinityPattern = /-?\d+[+\-*/]\d+=(Infinity|-?\d+)/;
+    var infinityPattern = /-?\d+[+\-*/]-?\d+=(Infinity|-?\d+)/;
 
     if (
       answer.value == "0" ||
