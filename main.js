@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var answer = document.getElementById("answer");
 
   function appendToAnswer(value) {
-    if (answer.value == "0") {
+    if (
+      answer.value == "0" ||
+      answer.value == "Error" ||
+      answer.value == "Infinity"
+    ) {
       answer.value = "";
       answer.value += value;
     } else {
@@ -24,7 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function calculate() {
     try {
-      answer.value = eval(answer.value);
+      var operation = answer.value;
+      var result = eval(answer.value);
+      answer.value = operation + "=" + result;
     } catch (error) {
       answer.value = "Error";
     }
