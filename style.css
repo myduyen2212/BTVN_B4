@@ -87,7 +87,7 @@ input[name="number"]:hover {
 }
 
 #equal {
-  width: 220px;
+  /* width: 220px; */
   background-color: #deb13f;
 }
 

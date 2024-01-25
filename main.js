@@ -95,6 +95,10 @@ document.addEventListener("DOMContentLoaded", function () {
     appendToAnswer("0");
   });
 
+  document.getElementById("decimal").addEventListener("click", function () {
+    appendToAnswer(".");
+  });
+
   document.getElementById("equal").addEventListener("click", function () {
     calculate();
   });
