@@ -1,0 +1,140 @@
+/* GENERAL */
+body {
+  background-color: #cbeeec;
+  font-family: sans-serif, Helvetica, Arial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container {
+  background-color: #86d3d2;
+  height: auto;
+  width: 490px;
+  border-radius: 10px;
+}
+
+/* TITLE */
+#title {
+  display: flex;
+  margin: 20px;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+
+img {
+  width: 50px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+h1 {
+  color: rgb(29, 81, 64);
+}
+
+/* CALCULATOR */
+
+/* DISPLAY BOX */
+#body {
+  margin: 20px;
+  width: 450px;
+  height: auto;
+  background-color: #86d3d2;
+  border-radius: 10px;
+}
+
+#displayBox {
+  display: flex;
+  justify-content: center;
+  background-color: #1ab6ae;
+  width: 100%;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  height: 60px;
+  width: 90%;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #c5f0ee;
+  font-size: 20px;
+  text-align: right;
+}
+
+/* BUTTONS */
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+input[type="button"] {
+  font-size: 20px;
+  border-radius: 6px;
+  border: none;
+  height: 40px;
+  width: 105px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #c8efe3;
+}
+
+input[name="number"]:hover {
+  cursor: pointer;
+  background-color: #9fd2c3;
+}
+
+#equal {
+  width: 220px;
+  background-color: #deb13f;
+}
+
+#equal:hover {
+  cursor: pointer;
+  background-color: #9e8137;
+}
+
+#backspace,
+#reset {
+  width: 220px;
+  margin-bottom: 0px;
+}
+
+#divide,
+#multiple,
+#plus,
+#minus {
+  margin-right: 0px;
+  background-color: rgb(118, 178, 195);
+}
+
+#divide:hover,
+#multiple:hover,
+#plus:hover,
+#minus:hover {
+  cursor: pointer;
+  background-color: rgb(91, 152, 169);
+}
+
+#reset {
+  margin-right: 0px;
+  background-color: rgb(191, 115, 87);
+}
+
+#reset:hover {
+  cursor: pointer;
+  background-color: rgb(148, 78, 53);
+}
+
+#backspace {
+  background-color: rgb(214, 214, 105);
+}
+
+#backspace:hover {
+  cursor: pointer;
+  background-color: rgb(167, 167, 68);
+}
