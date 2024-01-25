@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function backspace() {
     answer.value = answer.value.slice(0, -1);
+    if (answer.value == "") {
+      answer.value = "0";
+    }
   }
 
   function reset() {
