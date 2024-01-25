@@ -1,12 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Sự kiện này được kích hoạt khi DOM (Document Object Model) đã được tải hoàn toàn.
+  // Nó giúp đảm bảo rằng mã JavaScript sẽ thực thi sau khi tất cả các phần tử HTML đã được xây dựng.
+
   // Tạo các hàm xử lý cho biến cố của các nút
   var answer = document.getElementById("answer");
+  //Lấy ra phần tử có id là "answer" và gán nó vào biến answer. Phần tử này là ô nhập liệu hiển thị kết quả trên máy tính.
 
   function appendToAnswer(value) {
+    var infinityPattern = new RegExp("\\d\\/\\d=Infinity");
     if (
       answer.value == "0" ||
       answer.value == "Error" ||
-      answer.value == "Infinity"
+      infinityPattern.test(answer.value)
     ) {
       answer.value = "";
       answer.value += value;
