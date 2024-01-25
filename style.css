@@ -1,4 +1,4 @@
-/* GENERAL */
+/******************* GENERAL *******************/
 body {
   background-color: #cbeeec;
   font-family: sans-serif, Helvetica, Arial;
@@ -15,7 +15,7 @@ body {
   border-radius: 10px;
 }
 
-/* TITLE */
+/******************* TITLE *******************/
 #title {
   display: flex;
   margin: 20px;
@@ -33,16 +33,16 @@ h1 {
   color: rgb(29, 81, 64);
 }
 
-/* CALCULATOR */
-
-/* DISPLAY BOX */
-#body {
+/******************* CALCULATOR *******************/
+#calculator {
   margin: 20px;
   width: 450px;
   height: auto;
   background-color: #86d3d2;
   border-radius: 10px;
 }
+
+/******************* DISPLAY BOX ******************/
 
 #displayBox {
   display: flex;
@@ -63,7 +63,7 @@ input[type="text"] {
   text-align: right;
 }
 
-/* BUTTONS */
+/******************* BUTTONS *******************/
 #buttons {
   display: flex;
   flex-wrap: wrap;
